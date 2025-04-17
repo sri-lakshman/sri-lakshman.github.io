@@ -1,5 +1,10 @@
-h1 {
+h1,h2,h3,h4,h5,h6,p {
     font-family: "Bricolage Grotesque", sans-serif;
+}
+h1 {
     font-weight: bold;
     font-size: 60px;
+}
+p {
+    font-size: 24px;
 }
