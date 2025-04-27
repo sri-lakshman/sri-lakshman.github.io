@@ -8,6 +8,6 @@ h1 {
 p {
     font-size: 24px;
 }
-.hero_section .hero_skill .hero_skillset span {
+.hero_skill .hero_skillset span {
     cursor: pointer;
 }       
