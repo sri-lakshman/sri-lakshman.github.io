@@ -1,4 +1,4 @@
-h1,h2,h3,h4,h5,h6,p {
+h1,h2,h3,h4,h5,h6,p,a,div {
     font-family: "Bricolage Grotesque", sans-serif;
 }
 h1 {
@@ -7,4 +7,7 @@ h1 {
 }
 p {
     font-size: 24px;
+}
+.hero_section .hero_skill .hero_skillset span {
+    cursor: pointer;
 }

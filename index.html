@@ -15,24 +15,47 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="fixed w-full text-slate-900">
+        <nav class="flex items-center justify-between p-4 m-3 bg-blue-600/10 backdrop-blur-sm rounded-2xl">
             <div class="flex">
                 <a href="#" class="">
-                    <img class="h-8 w-auto" src="/images/sl-brand-logo.svg" title="SL Brand Logo" alt="SL Brand Logo">
+                    <img class="h-10 w-auto" src="/images/sl-brand-logo.svg" title="SL Brand Logo" alt="SL Brand Logo">
                 </a>
             </div>
-            <div class="flex">
+            <div class="flex gap-4 font-medium">
                 <a href="#" class="">About</a>
                 <a href="#" class="">Gallery</a>
                 <a href="#" class="">Skills</a>
             </div>
             <div class="flex">
-                <a href="#" class="">Get in touch!</a>
+                <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-md">Get in touch!</a>
             </div>
         </nav>
     </header>
-    <h1>Hi, I'm Sri. How are you?</h1>
-    <p>testing 123</p>
+    <section class="hero_section bg-slate-50 h-screen">
+        <div class="flex items-center h-full p-10 text-slate-800 gap-4">
+            <div class="flex-1 pt-10">
+                <h1 class="text-7xl font-bold">Hi, I'm <span class="text-blue-600">Sri</span></h1>
+                <h2 class="text-3xl font-bold mt-2">Senior UI/UX Designer | Design Lead</h2>
+                <div class="hero_skill mt-4">
+                    <p class="text-xl font-medium">Crafting Engaging Digital Experiences with</p>
+                    <div class="hero_skillset flex gap-2 mt-2">
+                        <span class="inline-flex items-center rounded-md bg-slate-200 text-slate-900 hover:bg-blue-600 hover:text-white px-2 py-1 text-sm font-medium">Figma </span>
+                        <span class="inline-flex items-center rounded-md bg-slate-200 text-slate-900 hover:bg-blue-600 hover:text-white px-2 py-1 text-sm font-medium">Adobe CC</span>
+                        <span class="inline-flex items-center rounded-md bg-slate-200 text-slate-900 hover:bg-blue-600 hover:text-white px-2 py-1 text-sm font-medium">Framer</span>
+                        <span class="inline-flex items-center rounded-md bg-slate-200 text-slate-900 hover:bg-blue-600 hover:text-white px-2 py-1 text-sm font-medium">Webflow</span>
+                        <span class="inline-flex items-center rounded-md bg-slate-200 text-slate-900 hover:bg-blue-600 hover:text-white px-2 py-1 text-sm font-medium">InVision</span>
+                        <span class="inline-flex items-center rounded-md bg-slate-200 text-slate-900 hover:bg-blue-600 hover:text-white px-2 py-1 text-sm font-medium">Sketch</span>
+                        <span class="inline-flex items-center rounded-md bg-slate-200 text-slate-900 hover:bg-blue-600 hover:text-white px-2 py-1 text-sm font-medium">HTML & CSS</span>
+                        <span class="inline-flex items-center rounded-md bg-slate-200 text-slate-900 hover:bg-blue-600 hover:text-white px-2 py-1 text-sm font-medium">Shopify</span>
+                        <span class="inline-flex items-center rounded-md bg-slate-200 text-slate-900 hover:bg-blue-600 hover:text-white px-2 py-1 text-sm font-medium">WordPress</span>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <img class="h-10 w-auto" src="/images/sl-brand-logo.svg" title="SL Brand Logo" alt="SL Brand Logo">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
