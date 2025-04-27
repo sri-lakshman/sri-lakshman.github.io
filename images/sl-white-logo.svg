@@ -6,8 +6,8 @@
 	.st0{fill:url(#SVGID_1_);}
 </style>
 <radialGradient id="SVGID_1_" cx="805.8419" cy="798.9691" r="923.5645" gradientTransform="matrix(1 0 0 -1 0 1000)" gradientUnits="userSpaceOnUse">
-	<stop  offset="0" style="stop-color:#BFDBFE"/>
-	<stop  offset="1" style="stop-color:#FFFFFF"/>
+	<stop  offset="8.524463e-08" style="stop-color:#FFFFFF"/>
+	<stop  offset="1" style="stop-color:#BFDBFE"/>
 </radialGradient>
 <path class="st0" d="M364.9,708.7c-17.5,0-206.4,0-319.4,0C16.3,645.1,0,574.5,0,500C0,223.9,223.9,0,500,0s500,223.9,500,500
 	c0,71.4-15,139.2-41.9,200.7h-210c-12.4,0-22.4-10-22.4-22.4v-341c0-49.6-40.2-89.7-89.7-89.7H350.5c-44.2,0-82.1,6.7-113.5,20
