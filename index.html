@@ -21,7 +21,7 @@
 </head>
 <body>
     <header class="fixed w-full text-slate-900 z-[100]">
-        <nav class="flex items-center justify-between p-4 m-3 bg-slate-100/80 backdrop-blur-md rounded-2xl">
+        <nav class="flex items-center justify-between p-4 m-3 bg-white bg-opacity-60 backdrop-blur-md rounded-2xl">
           <!-- Logo -->
           <div class="flex">
             <a href="/">
@@ -38,13 +38,13 @@
           <div class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-wide">
             <a href="#about-me" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">About</a>
             <a href="#core-strengths" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">Skills</a>
-            <a href="#featured-projects" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">Projects</a>
+            <a href="#projects" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">Projects</a>
             <a href="/images/Sri-Lakshman-S_Resume.pdf" target="_blank" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">Resume</a>
           </div>
       
           <!-- CTA (Desktop) -->
           <div class="hidden md:flex">
-            <a href="#contact" class="bg-blue-600 text-white transition ease-in-out hover:bg-slate-900 hover:-translate-y-1 px-4 py-2 rounded-md">Get in touch!</a>
+            <a href="#contact" class="bg-blue-600 text-white transition ease-in-out hover:bg-slate-900 hover:-translate-y-1 px-4 py-2 rounded-full">Get in touch!</a>
           </div>
         </nav>
       
@@ -53,22 +53,22 @@
           <div class="flex flex-col gap-8 font-medium uppercase text-xl tracking-wide text-center">
             <a href="#about-me" class="hover:text-blue-600">About</a>
             <a href="#core-strengths" class="hover:text-blue-600">Skills</a>
-            <a href="#featured-projects" class="hover:text-blue-600">Projects</a>
+            <a href="#projects" class="hover:text-blue-600">Projects</a>
             <a href="/images/Sri-Lakshman-S_Resume.pdf" target="_blank" class="hover:text-blue-600">Resume</a>
             <a href="#contact" class="hover:text-blue-600">Get in touch!</a>
           </div>
         </div>
     </header>
       
-    <section class="hero_section bg-slate-50 h-full md:h-screen">
+    <section class="hero_section bg-slate-500 bg-opacity-5 h-full md:h-screen">
         <div class="flex flex-col md:flex-row items-start md:items-center h-full p-6 md:p-20 text-slate-800 gap-4">
             <div class="flex-1 w-full  pt-40 md:pt-8 pb-12 md:pb-0">
                 <img class="h-48 md:h-32 w-auto" src="/images/sri-lakshman.png" title="Sri Lakshman" alt="Sri Lakshman">
                 <h1 class="text-7xl font-bold mt-8">Hi, I'm <span class="text-blue-600">Sri</span></h1>
                 <h2 class="text-2xl md:text-3xl font-light mt-2">Design Lead | UI/UX & Graphic Designer | Building Engaging Digital Experiences</h2>
-                <div class="flex flex-col md:flex-row text-center gap-6 md:gap-4 mt-8">
-                    <a href="#core-strengths" class="w-full md:w-auto text-2xl md:text-lg font-medium bg-blue-600 text-white transition ease-in-out hover:bg-slate-900 hover:-translate-y-1 px-6 py-6 md:py-4 rounded-lg">More Info</a>
-                    <a href="#featured-projects" class="w-full md:w-auto text-2xl md:text-lg font-medium bg-white text-blue-600 transition ease-in-out hover:bg-slate-900 hover:text-white hover:border-slate-900 hover:-translate-y-1 px-6 py-6 md:py-4 rounded-lg border-2">My Projects</a>
+                <div class="flex flex-col md:flex-row text-center gap-6 md:gap-2 mt-8">
+                    <a href="#core-strengths" class="w-full md:w-auto text-2xl md:text-lg font-medium bg-blue-600 text-white transition ease-in-out hover:bg-slate-900 hover:-translate-y-1 px-6 py-6 md:py-2 rounded-full">More Info</a>
+                    <a href="#projects" class="w-full md:w-auto text-2xl md:text-lg font-medium bg-slate-900 text-white transition ease-in-out hover:bg-white hover:text-blue-600 hover:-translate-y-1 px-6 py-6 md:py-2 rounded-full border-2">My Projects</a>
                 </div>
                 <div class="flex gap-2 w-full mt-8 md:mt-12 justify-between md:justify-start">
                     <a href="https://www.linkedin.com/in/sri-lakshman-s-0462866b/" target="_blank" class="flex items-center rounded-full bg-blue-400 hover:bg-sky-700 transition ease-in-out hover:-translate-y-1 hover:shadow-xl p-4">
@@ -93,7 +93,7 @@
             </div>
         </div>
     </section>
-    <section id="about-me" class="bg-white h-auto">
+    <section id="about-me" class="bg-white bg-opacity-5 h-auto">
         <div class="flex flex-col-reverse md:flex-row items-start md:items-center h-full p-6 md:p-10 text-slate-800 py-16 gap-4">
             <div class="flex-1 w-full pl-0 pr-0 md:pr-20">
                 <img class="w-full md:w-auto" src="/images/sl-illustration-2.svg" title="Designing" alt="Designing">
@@ -111,7 +111,7 @@
             </div>
         </div>
     </section>
-    <section id="core-strengths" class="bg-slate-50 p-6 md:p-20 py-20">
+    <section id="core-strengths" class="bg-slate-500 bg-opacity-5 p-6 md:p-20 py-20">
         <div class="mb-10">
             <h4 class="font-bold text-5xl mb-4">My Core Strengths</h4>
             <p class="text-xl font-light">A snapshot of my core strengths that define how I design, lead, and deliver.</p>
@@ -149,7 +149,7 @@
             </div>
         </div>
     </section>
-    <section id="personal-works" class="bg-white p-6 md:p-20 py-20">
+    <section id="projects" class="bg-white bg-opacity-5 p-6 md:p-20 py-20">
         <div class="mb-10">
             <h4 class="font-bold text-4xl mb-2">Personal Projects & Concept Designs</h4>
             <p class="text-xl font-light">Exploring ideas beyond the brief — a collection of passion-driven case studies and experimental UI concepts.</p>
@@ -227,51 +227,51 @@
     <section class="bg-blue-600 px-6 py-20">
         <div class="hero_skill">
             <p class="text-3xl font-medium text-center text-white mb-6">Crafting Engaging Digital Experiences with</p>
-            <div class="hero_skillset flex flex-wrap justify-center gap-5 w-full md:w-4/6 mx-auto">
-                <span class="flex gap-4 items-center rounded-xl bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-4 text-xl font-medium">
-                    <img class="h-8 w-auto" src="/images/tools/Figma.svg" title="Figma Logo" alt="Figma Logo">
+            <div class="hero_skillset flex flex-wrap justify-center gap-4 w-full md:w-4/6 mx-auto">
+                <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-3 text-xl font-medium">
+                    <img class="h-6 w-auto" src="/images/tools/Figma.svg" title="Figma Logo" alt="Figma Logo">
                     Figma
                 </span>
-                <span class="flex gap-4 items-center rounded-xl bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-4 text-xl font-medium">
-                    <img class="h-8 w-auto" src="/images/tools/Adobe.svg" title="Adobe Logo" alt="Adobe Logo">
+                <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-3 text-xl font-medium">
+                    <img class="h-6 w-auto" src="/images/tools/Adobe.svg" title="Adobe Logo" alt="Adobe Logo">
                     Adobe CC
                 </span>
-                <span class="flex gap-4 items-center rounded-xl bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-4 text-xl font-medium">
-                    <img class="h-8 w-auto" src="/images/tools/Framer.svg" title="Framer Logo" alt="Framer Logo">
+                <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-3 text-xl font-medium">
+                    <img class="h-6 w-auto" src="/images/tools/Framer.svg" title="Framer Logo" alt="Framer Logo">
                     Framer
                 </span>
-                <span class="flex gap-4 items-center rounded-xl bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-4 text-xl font-medium">
-                    <img class="h-8 w-auto" src="/images/tools/Sketch.svg" title="Sketch Logo" alt="Sketch Logo">
+                <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-3 text-xl font-medium">
+                    <img class="h-6 w-auto" src="/images/tools/Sketch.svg" title="Sketch Logo" alt="Sketch Logo">
                     Sketch
                 </span>
-                <span class="flex gap-4 items-center rounded-xl bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-4 text-xl font-medium">
-                    <img class="h-8 w-auto" src="/images/tools/Shopify.svg" title="Shopify Logo" alt="Shopify Logo">
+                <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-3 text-xl font-medium">
+                    <img class="h-6 w-auto" src="/images/tools/Shopify.svg" title="Shopify Logo" alt="Shopify Logo">
                     Shopify
                 </span>
-                <span class="flex gap-4 items-center rounded-xl bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-4 text-xl font-medium">
-                    <img class="h-8 w-auto" src="/images/tools/WordPress.svg" title="WordPress Logo" alt="WordPress Logo">
+                <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-3 text-xl font-medium">
+                    <img class="h-6 w-auto" src="/images/tools/WordPress.svg" title="WordPress Logo" alt="WordPress Logo">
                     WordPress
                 </span>
-                <span class="flex gap-4 items-center rounded-xl bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-4 text-xl font-medium">
-                    <img class="h-8 w-auto" src="/images/tools/HTML5.svg" title="HTML5 Logo" alt="HTML5 Logo">
+                <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-3 text-xl font-medium">
+                    <img class="h-6 w-auto" src="/images/tools/HTML5.svg" title="HTML5 Logo" alt="HTML5 Logo">
                     HTML 5
                 </span>
-                <span class="flex gap-4 items-center rounded-xl bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-4 text-xl font-medium">
-                    <img class="h-8 w-auto" src="/images/tools/CSS3.svg" title="CSS3 Logo" alt="CSS3 Logo">
+                <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-3 text-xl font-medium">
+                    <img class="h-6 w-auto" src="/images/tools/CSS3.svg" title="CSS3 Logo" alt="CSS3 Logo">
                     CSS 3
                 </span>
-                <span class="flex gap-4 items-center rounded-xl bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-4 text-xl font-medium">
-                    <img class="h-8 w-auto" src="/images/tools/Tailwind.svg" title="Tailwind CSS Logo" alt="Tailwind CSS Logo">
+                <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-3 text-xl font-medium">
+                    <img class="h-6 w-auto" src="/images/tools/Tailwind.svg" title="Tailwind CSS Logo" alt="Tailwind CSS Logo">
                     Tailwind
                 </span>
-                <span class="flex gap-4 items-center rounded-xl bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-4 text-xl font-medium">
-                    <img class="h-8 w-auto" src="/images/tools/WebFlow.svg" title="WebFlow Logo" alt="WebFlow Logo">
+                <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-xl px-5 py-3 text-xl font-medium">
+                    <img class="h-6 w-auto" src="/images/tools/WebFlow.svg" title="WebFlow Logo" alt="WebFlow Logo">
                     Webflow
                 </span>
             </div>
         </div>
     </section>
-    <section id="featured-projects" class="bg-white p-6 md:p-20 py-20">
+    <section id="featured-projects" class="bg-white bg-opacity-5 p-6 md:p-20 py-20">
         <div class="mb-10">
             <h4 class="font-bold text-4xl mb-2">Featured Works</h4>
             <p class="text-xl font-light">Real projects, real impact — a showcase of digital experiences I’ve helped design and deliver.</p>

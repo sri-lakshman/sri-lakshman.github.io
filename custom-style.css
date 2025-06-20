@@ -4,6 +4,9 @@ html {
 body {
     font-family: "Bricolage Grotesque", sans-serif;
     cursor: pointer;
+    background-image: url('/images/bg-grid.svg');
+    background-repeat: repeat;
+    background-size: 360px 360px;
 }
 h1 {
     font-weight: bold;
