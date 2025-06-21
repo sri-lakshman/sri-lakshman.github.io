@@ -1,41 +1,61 @@
 // ----- Mobile Menu Toggle -----
 const toggleBtn = document.getElementById('menu-toggle');
 const menu = document.getElementById('mobile-menu');
-
 let isOpen = false;
 
 function openMenu() {
   menu.classList.remove('hidden');
-  toggleBtn.innerHTML = '×'; // Change to close icon
+  toggleBtn.innerHTML = '×'; // Close icon
   isOpen = true;
 }
 
 function closeMenu() {
   menu.classList.add('hidden');
-  toggleBtn.innerHTML = '☰'; // Change back to hamburger
+  toggleBtn.innerHTML = '☰'; // Hamburger icon
   isOpen = false;
 }
 
-toggleBtn.addEventListener('click', (e) => {
-  e.stopPropagation(); // Prevent immediate outside click from firing
-  if (isOpen) {
-    closeMenu();
-  } else {
-    openMenu();
-  }
-});
+if (toggleBtn && menu) {
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    isOpen ? closeMenu() : openMenu();
+  });
 
-// Close when clicking outside
-document.addEventListener('click', (e) => {
-  if (isOpen && !menu.contains(e.target) && !toggleBtn.contains(e.target)) {
-    closeMenu();
-  }
-});
+  document.addEventListener('click', (e) => {
+    if (isOpen && !menu.contains(e.target) && !toggleBtn.contains(e.target)) {
+      closeMenu();
+    }
+  });
 
-// Optional: Close on ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) {
+      closeMenu();
+    }
+  });
+}
+
+// ----- Image Modal Logic -----
+function openModal() {
+  const modal = document.getElementById('imageModal');
+  modal?.classList.remove('hidden');
+}
+
+function closeModal() {
+  const modal = document.getElementById('imageModal');
+  modal?.classList.add('hidden');
+}
+
+function handleOverlayClick(e) {
+  const modal = document.getElementById('imageModal');
+  if (e.target === modal) {
+    closeModal();
+  }
+}
+
+document.addEventListener('click', handleOverlayClick);
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && isOpen) {
-    closeMenu();
+  if (e.key === 'Escape') {
+    closeModal();
   }
 });
 
@@ -45,16 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextBtn = document.getElementById('nextBtn');
   const prevBtn = document.getElementById('prevBtn');
 
-  function scrollSlider(direction) {
-    const slide = slider.querySelector('.snap-start');
-    if (!slide) return;
+  if (slider && nextBtn && prevBtn) {
+    const scrollSlider = (direction) => {
+      const slide = slider.querySelector('.snap-start');
+      if (!slide) return;
 
-    const slideStyles = window.getComputedStyle(slide);
-    const slideWidth = slide.offsetWidth + parseInt(slideStyles.marginRight || 24);
-    slider.scrollBy({ left: direction * slideWidth, behavior: 'smooth' });
+      const slideStyles = window.getComputedStyle(slide);
+      const slideWidth = slide.offsetWidth + parseInt(slideStyles.marginRight || 24);
+      slider.scrollBy({ left: direction * slideWidth, behavior: 'smooth' });
+    };
+
+    nextBtn.addEventListener('click', () => scrollSlider(1));
+    prevBtn.addEventListener('click', () => scrollSlider(-1));
   }
-
-  nextBtn.addEventListener('click', () => scrollSlider(1));
-  prevBtn.addEventListener('click', () => scrollSlider(-1));
 });
-
