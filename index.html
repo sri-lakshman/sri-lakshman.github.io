@@ -22,7 +22,7 @@
 </head>
 <body>
     <header class="fixed w-full text-slate-900 z-[100]">
-        <nav class="flex items-center justify-between p-4 m-3 bg-white bg-opacity-60 backdrop-blur-md rounded-2xl">
+        <nav class="flex items-center justify-between p-4 mx-3 md:mx-20 m-3 bg-white bg-opacity-60 backdrop-blur-md rounded-2xl">
           <!-- Logo -->
           <div class="flex">
             <a href="/">
@@ -62,16 +62,16 @@
     </header>
     
     <section class="hero_section bg-slate-500 bg-opacity-5 h-full md:h-screen">
-        <div class="flex flex-col md:flex-row items-start md:items-center h-full p-6 md:p-20 text-slate-800 gap-4">
-            <div class="flex-1 w-full  pt-40 md:pt-8 pb-12 md:pb-0">
-                <img class="h-48 md:h-32 w-auto" src="/images/sri-lakshman.png" title="Sri Lakshman" alt="Sri Lakshman">
-                <h1 class="text-7xl font-bold mt-8">Hi, I'm <span class="text-blue-600">Sri</span></h1>
+        <div class="flex flex-row items-center h-full p-6 md:p-20 text-slate-800 gap-4">
+            <div class="flex-1 w-full text-center pt-40 md:pt-8 pb-12 md:pb-0">
+                <img class="h-48 md:h-32 w-auto mx-auto" src="/images/sri-lakshman.png" title="Sri Lakshman" alt="Sri Lakshman">
+                <h1 class="sl-head text-7xl font-bold mt-8">Hi, I'm <span class="text-blue-600">Sri</span></h1>
                 <h2 class="text-2xl md:text-3xl font-light mt-2">Design Lead | UI/UX & Graphic Designer | Building Engaging Digital Experiences</h2>
-                <div class="flex flex-col md:flex-row text-center gap-6 md:gap-2 mt-8">
-                    <a href="#core-strengths" class="w-full md:w-auto text-2xl md:text-lg font-medium bg-blue-600 text-white transition ease-in-out hover:bg-white hover:text-blue-600 hover:-translate-y-1 px-6 py-6 md:py-2 rounded-full border-2 border-blue-600 hover:border-blue-200 shadow-[0px_4px_0_#1e40af]">More Info</a>
-                    <a href="#projects" class="w-full md:w-auto text-2xl md:text-lg font-medium bg-slate-900 text-white transition ease-in-out hover:bg-white hover:text-blue-600 hover:-translate-y-1 px-6 py-6 md:py-2 rounded-full border-2 border-slate-900 hover:border-blue-200 shadow-[0px_4px_0_#1e40af]">My Projects</a>
+                <div class="flex flex-col md:flex-row justify-center gap-6 md:gap-2 mt-8">
+                    <a href="#core-strengths" class="sl-btn w-full md:w-auto text-2xl md:text-lg font-medium bg-blue-600 text-white transition ease-in-out hover:bg-white hover:text-blue-600 hover:-translate-y-1 px-6 py-6 md:py-2 rounded-full border-2 border-blue-600 hover:border-blue-200 shadow-[0px_4px_0_#1e40af]">More Info</a>
+                    <a href="#projects" class="sl-btn w-full md:w-auto text-2xl md:text-lg font-medium bg-slate-900 text-white transition ease-in-out hover:bg-white hover:text-blue-600 hover:-translate-y-1 px-6 py-6 md:py-2 rounded-full border-2 border-slate-900 hover:border-blue-200 shadow-[0px_4px_0_#1e40af]">My Projects</a>
                 </div>
-                <div class="flex gap-2 w-full mt-8 md:mt-12 justify-between md:justify-start">
+                <div class="flex gap-2 w-full mt-8 md:mt-12 justify-center">
                     <a href="https://www.linkedin.com/in/sri-lakshman-s-0462866b/" target="_blank" class="flex items-center rounded-full bg-blue-400 hover:bg-sky-700 transition ease-in-out hover:-translate-y-1 hover:shadow-[0px_4px_0_#0c4a6e] p-4">
                         <img class="h-6 w-6" src="/images/social/social-icon-2.svg" title="LinkedIn" alt="LinkedIn">
                     </a>
@@ -89,9 +89,6 @@
                     </a>
                 </div>
             </div>
-            <div class="flex-1 hidden md:block pt-0 md:pt-20 pb-6 pl-0 md:pl-20 pr-0">
-                <img class="w-full" src="/images/sl-illustration-1.svg" title="Wireframing" alt="Wireframing">
-            </div>
         </div>
     </section>
     <section id="about-me" class="bg-white bg-opacity-5 h-auto">
@@ -100,7 +97,7 @@
                 <img class="w-full md:w-auto" src="/images/sl-illustration-2.svg" title="Designing" alt="Designing">
             </div>
             <div class="flex-1">
-                <h3 class="text-6xl font-bold mb-6">About Me</h3>
+                <h3 class="sl-head text-6xl font-bold mb-6">About Me</h3>
                 <div>
                     <p class="text-xl font-light pb-4">I'm a passionate and detail-driven Design Lead with 7+ years of experience in Graphic Design and UI/UX Design.</p>
                     <p class="text-xl font-light pb-4">I specialize in creating digital products that are not only visually stunning but also user-centric and intuitive.</p>
@@ -114,54 +111,47 @@
     </section>
     <section id="core-strengths" class="bg-slate-500 bg-opacity-5 p-6 md:p-20 py-20">
         <div class="mb-10">
-            <h4 class="font-bold text-5xl mb-4">My Core Strengths</h4>
+            <h4 class="sl-head font-bold text-5xl mb-4">My Core Strengths</h4>
             <p class="text-xl font-light">A snapshot of my core strengths that define how I design, lead, and deliver.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 items-start gap-6">
             <div class="flex flex-col justify-start gap-2 h-full bg-white p-6 rounded-2xl border-2 transition ease-in-out hover:shadow-[0px_4px_0_#2563eb] hover:-translate-y-1">
                 <img class="h-16 w-16 mb-3" src="/images/strength/Strength-1.svg" title="User Centered" alt="User Centered">
-                <div class="font-bold text-2xl md:text-xl">User-Centered Design Thinking</div>
+                <div class="sl-head font-bold text-2xl md:text-xl">User-Centered Design Thinking</div>
                 <span class="text-slate-900 text-md font-light">Designs focused on real user needs.</span>
             </div>
             <div class="flex flex-col justify-start gap-2 h-full bg-white p-6 rounded-2xl border-2 transition ease-in-out hover:shadow-[0px_4px_0_#2563eb] hover:-translate-y-1">
                 <img class="h-16 w-16 mb-3" src="/images/strength/Strength-2.svg" title="Branding" alt="Branding">
-                <div class="font-bold text-2xl md:text-xl">Creative Direction & Branding</div>
+                <div class="sl-head font-bold text-2xl md:text-xl">Creative Direction & Branding</div>
                 <span class="text-slate-900 text-md font-light">Crafts clear, memorable brands.</span>
             </div>
             <div class="flex flex-col justify-start gap-2 h-full bg-white p-6 rounded-2xl border-2 transition ease-in-out hover:shadow-[0px_4px_0_#2563eb] hover:-translate-y-1">
                 <img class="h-16 w-16 mb-3" src="/images/strength/Strength-3.svg" title="Design System" alt="Design System">
-                <div class="font-bold text-2xl md:text-xl">Robust Design Systems</div>
+                <div class="sl-head font-bold text-2xl md:text-xl">Robust Design Systems</div>
                 <span class="text-slate-900 text-md font-light">Builds scalable, consistent components.</span>
             </div>
             <div class="flex flex-col justify-start gap-2 h-full bg-white p-6 rounded-2xl border-2 transition ease-in-out hover:shadow-[0px_4px_0_#2563eb] hover:-translate-y-1">
                 <img class="h-16 w-16 mb-3" src="/images/strength/Strength-4.svg" title="UI/UX" alt="UI/UX">
-                <div class="font-bold text-2xl md:text-xl">End-to-End UI/UX Execution</div>
+                <div class="sl-head font-bold text-2xl md:text-xl">End-to-End UI/UX Execution</div>
                 <span class="text-slate-900 text-md font-light">Delivers clean, usable interfaces.</span>
             </div>
             <div class="flex flex-col justify-start gap-2 h-full bg-white p-6 rounded-2xl border-2 transition ease-in-out hover:shadow-[0px_4px_0_#2563eb] hover:-translate-y-1">
                 <img class="h-16 w-16 mb-3" src="/images/strength/Strength-5.svg" title="Team Collaboration" alt="Team Collaboration">
-                <div class="font-bold text-2xl md:text-xl">Cross-Functional Collaboration</div>
+                <div class="sl-head font-bold text-2xl md:text-xl">Cross-Functional Collaboration</div>
                 <span class="text-slate-900 text-md font-light">Aligns design with product goals.</span>
             </div>
             <div class="flex flex-col justify-start gap-2 h-full bg-white p-6 rounded-2xl border-2 transition ease-in-out hover:shadow-[0px_4px_0_#2563eb] hover:-translate-y-1">
                 <img class="h-16 w-16 mb-3" src="/images/strength/Strength-6.svg" title="Leadership" alt="Leadership">
-                <div class="font-bold text-2xl md:text-xl">Mentorship & Team Leadership</div>
+                <div class="sl-head font-bold text-2xl md:text-xl">Mentorship & Team Leadership</div>
                 <span class="text-slate-900 text-md font-light">Guides teams and inspires growth.</span>
             </div>
         </div>
     </section>
     <section id="projects" class="bg-white bg-opacity-5 p-6 md:p-20 py-20">
         <div class="mb-6">
-            <h4 class="font-bold text-4xl mb-2">Personal Projects & Concept Designs</h4>
+            <h4 class="sl-head font-bold text-4xl mb-2">Personal Projects & Concept Designs</h4>
             <p class="text-xl font-light">Exploring ideas beyond the brief — a collection of passion-driven case studies and experimental UI concepts.</p>
         </div>
-        <!-- Note -->
-            <!-- <div class="flex items-center space-x-4 bg-gray-50 p-3 rounded-2xl border-2 border-gray-400 mb-6">
-                <div class="w-6 pl-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 432 432"><path fill="#9ca3af" d="M213.5 3q88.5 0 151 62.5T427 216t-62.5 150.5t-151 62.5t-151-62.5T0 216T62.5 65.5T213.5 3zM235 323V195h-43v128h43zm0-171v-43h-43v43h43z"/></svg>
-                </div>
-                <p class="text-left text-lg text-gray-700">Sorry for the inconvenience — Full project links coming soon — feel free to browse the quick previews for now.</p>
-            </div> -->
         
         <div class="relative">
             <!-- Slider Container -->
@@ -173,7 +163,7 @@
                     <div class="bg-violet-50 h-full p-5 rounded-2xl border-2 border-violet-200 transition ease-in-out hover:-translate-y-1 hover:shadow-[0px_4px_0_#8b5cf6]">
                         <img src="/images/personal-projects/ai-website-design.webp" class="w-full h-auto mb-4 border-2 object-cover rounded-md" alt="CreatrBot">
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-2xl/7 font-semibold">CreatrBot – AI Content Assistant</h3>
+                            <h3 class="sl-head text-2xl/7 font-semibold">CreatrBot – AI Content Assistant</h3>
                             <p class="text-gray-700 text-lg/6 font-light">A conceptual AI platform that helps designers generate portfolio text and brand copy with ease.</p>
                         </div>
                     </div>
@@ -186,7 +176,7 @@
                     <div class="bg-amber-50 h-full p-5 rounded-2xl border-2 border-amber-200 transition ease-in-out hover:-translate-y-1 hover:shadow-[0px_4px_0_#f59e0b]">
                         <img src="/images/personal-projects/creative-website-design.webp" alt="Diginova thumbnail" class="w-full h-auto mb-4 border-2 object-cover rounded-md">
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-2xl/7 font-semibold">Diginova – Creative Agency Website</h3>
+                            <h3 class="sl-head text-2xl/7 font-semibold">Diginova – Creative Agency Website</h3>
                             <p class="text-gray-700 text-lg/6 font-light">A bold and modern design for a digital agency turning ideas into immersive digital experiences.</p>
                         </div>
                     </div>
@@ -199,7 +189,7 @@
                     <div class="bg-red-50 h-full p-5 rounded-2xl border-2 border-red-200 transition ease-in-out hover:-translate-y-1 hover:shadow-[0px_4px_0_#f87171]">
                         <img src="/images/personal-projects/e-commerce-website-design.webp" alt="Sneakz thumbnail" class="w-full h-auto mb-4 border-2 object-cover rounded-md">
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-2xl/7 font-semibold">Sneakz – Sneaker E-Commerce Website</h3>
+                            <h3 class="sl-head text-2xl/7 font-semibold">Sneakz – Sneaker E-Commerce Website</h3>
                             <p class="text-gray-700 text-lg/6 font-light">A trendy online store design for sneaker lovers—highlighting top brands and user-first browsing.</p>
                         </div>
                     </div>
@@ -212,7 +202,7 @@
                     <div class="bg-yellow-50 h-full p-5 rounded-2xl border-2 border-yellow-200 transition ease-in-out hover:-translate-y-1 hover:shadow-[0px_4px_0_#facc15]">
                         <img src="/images/personal-projects/youtuber-website-design.webp" alt="MrBeast thumbnail" class="w-full h-auto mb-4 border-2 object-cover rounded-md">
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-2xl/7 font-semibold">MrBeast – Creator Website UI</h3>
+                            <h3 class="sl-head text-2xl/7 font-semibold">MrBeast – Creator Website UI</h3>
                             <p class="text-gray-700 text-lg/6 font-light">A fun, energetic website concept for MrBeast to showcase content, merch, and social reach.</p>
                         </div>
                     </div>
@@ -225,7 +215,7 @@
                     <div class="bg-red-50 h-full p-5 rounded-2xl border-2 border-red-200 transition ease-in-out hover:-translate-y-1 hover:shadow-[0px_4px_0_#dc2626]">
                         <img src="/images/personal-projects/brand-guideline-design.webp" alt="Sixt6creation thumbnail" class="w-full h-auto mb-4 border-2 object-cover rounded-md">
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-2xl/7 font-semibold">Sixt6creation – Brand Guidelines</h3>
+                            <h3 class="sl-head text-2xl/7 font-semibold">Sixt6creation – Brand Guidelines</h3>
                             <p class="text-gray-700 text-lg/6 font-light">Visual identity and design principles for a modern digital agency offering creative and tech services.</p>
                         </div>
                     </div>
@@ -237,14 +227,11 @@
                     <div class="bg-blue-50 h-full p-5 rounded-2xl border-2 border-blue-200 transition ease-in-out hover:-translate-y-1 hover:shadow-[0px_4px_0_#1d4ed8]">
                         <img src="/images/personal-projects/rental-marketplace-app.webp" class="w-full h-auto mb-4 border-2 object-cover rounded-md" alt="Rentigo">
                         <div class="flex flex-col gap-2">
-                            <h3 class="text-2xl/7 font-semibold">Rentigo – Online Rental Marketplace</h3>
+                            <h3 class="sl-head text-2xl/7 font-semibold">Rentigo – Online Rental Marketplace</h3>
                             <p class="text-gray-700 text-lg/6 font-light">A modern rental platform concept focused on easy browsing, smooth booking, and user-friendly design.</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Add remaining slides in the same format -->
-                <!-- Slide 3 ... Slide 6 -->
 
             </div>
 
@@ -258,9 +245,9 @@
         </div>
     </section>
     <section class="bg-blue-600 px-6 py-20">
-        <div class="hero_skill">
+        <div class="skills">
             <p class="text-3xl font-medium text-center text-white mb-6">Crafting Engaging Digital Experiences with</p>
-            <div class="hero_skillset flex flex-wrap justify-center gap-3 w-full md:w-4/6 mx-auto">
+            <div class="skillset flex flex-wrap justify-center gap-3 w-full md:w-4/6 mx-auto">
                 <span class="flex gap-3 items-center rounded-full bg-white text-slate-900 transition ease-in-out hover:-translate-y-1 hover:shadow-[0px_4px_0_#1e40af] px-4 py-2 text-lg font-medium">
                     <img class="h-6 w-auto" src="/images/tools/Figma.svg" title="Figma Logo" alt="Figma Logo">
                     Figma
@@ -344,8 +331,8 @@
     </section> -->
     <section id="featured-projects" class="bg-white bg-opacity-5 h-auto">
         <div class="px-6 md:px-20 pt-20 pb-8 md:pb-0">
-            <h4 class="font-bold text-4xl mb-2">Featured Works</h4>
-            <h5 class="font-bold text-2xl mb-2">Real projects. Tangible outcomes.</h5>
+            <h4 class="sl-head font-bold text-4xl mb-2">Featured Works</h4>
+            <h5 class="sl-head font-bold text-2xl mb-2">Real projects. Tangible outcomes.</h5>
             <p class="text-xl font-light">Here’s an overview of select projects I’ve worked on as part of my role within the organization — each one focused on delivering thoughtful design solutions with measurable impact.</p>
         </div>
         <div class="flex flex-col md:flex-row items-start md:items-center h-full px-6 md:px-20 pb-12 text-slate-800 gap-10">
