@@ -102,3 +102,15 @@ function animateCursor() {
 }
 
 animateCursor();
+
+// Add hover effects
+const hoverTargets = document.querySelectorAll('.sl-btn');
+
+hoverTargets.forEach(target => {
+  target.addEventListener('mouseenter', () => {
+    cursor.classList.add('invert-mode');
+  });
+  target.addEventListener('mouseleave', () => {
+    cursor.classList.remove('invert-mode');
+  });
+});
