@@ -79,3 +79,26 @@ document.addEventListener('DOMContentLoaded', () => {
     prevBtn.addEventListener('click', () => scrollSlider(-1));
   }
 });
+
+// ----- Cursor -----
+const cursor = document.getElementById('cursor');
+
+let mouseX = 0, mouseY = 0;
+let currentX = 0, currentY = 0;
+
+document.addEventListener('mousemove', (e) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+});
+
+function animateCursor() {
+  // Smooth follow
+  currentX += (mouseX - currentX) * 0.15;
+  currentY += (mouseY - currentY) * 0.15;
+
+  cursor.style.transform = `translate3d(${currentX}px, ${currentY}px, 0)`;
+
+  requestAnimationFrame(animateCursor);
+}
+
+animateCursor();
