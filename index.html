@@ -21,51 +21,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div id="cursor" class="pointer-events-none fixed top-0 left-0 z-50 w-5 h-5 rounded-full bg-slate-400 opacity-50 shadow-xl z-[100]"></div>
-    <header class="fixed w-full text-slate-900 z-[99]">
-        <nav class="flex items-center justify-between p-4 mx-3 md:mx-20 m-3 bg-white bg-opacity-60 backdrop-blur-md rounded-2xl">
-          <!-- Logo -->
-          <div class="flex">
-            <a href="/">
-              <img class="h-12 w-auto p-2" src="/images/srilakshman-logo.svg" title="Sri Lakshman - Logo" alt="SL Brand Logo">
-            </a>
-          </div>
-      
-          <!-- Hamburger / Close Button -->
-          <button id="menu-toggle" class="md:hidden text-4xl mb-2 focus:outline-none z-[101]">
-            ☰
-          </button>
-      
-          <!-- Nav links (Desktop) -->
-          <div class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-wide">
-            <a href="#about-me" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">About</a>
-            <a href="#core-strengths" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">Skills</a>
-            <a href="#projects" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">Projects</a>
-            <a href="/images/Sri-Lakshman-S_Resume.pdf" target="_blank" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">Resume</a>
-          </div>
-      
-          <!-- CTA (Desktop) -->
-          <div class="hidden md:flex">
-            <a href="#contact" class="bg-blue-600 text-white transition ease-in-out hover:bg-slate-900 hover:-translate-y-1 px-4 py-2 rounded-full shadow-[0px_4px_0_#1e40af]">Get in touch!</a>
-          </div>
-        </nav>
-      
-        <!-- Mobile Drawer Menu -->
-        <div id="mobile-menu" class="md:hidden fixed top-20 left-0 right-0 mx-3 bg-blue-100/90 rounded-xl p-6 py-12 hidden z-[99]">
-          <div class="flex flex-col gap-8 font-medium uppercase text-xl tracking-wide text-center">
-            <a href="#about-me" class="hover:text-blue-600">About</a>
-            <a href="#core-strengths" class="hover:text-blue-600">Skills</a>
-            <a href="#projects" class="hover:text-blue-600">Projects</a>
-            <a href="/images/Sri-Lakshman-S_Resume.pdf" target="_blank" class="hover:text-blue-600">Resume</a>
-            <a href="#contact" class="hover:text-blue-600">Get in touch!</a>
-          </div>
-        </div>
-    </header>
+    <div id="header-include"></div>
     
-    <section class="hero_section bg-slate-500 bg-opacity-5 h-full md:h-screen">
+    <section class="hero_section bg-slate-500 bg-opacity-5 h-full">
         <div class="flex flex-row items-center h-full p-6 md:p-20 text-slate-800 gap-4">
-            <div class="flex-1 w-full text-center pt-40 md:pt-8 pb-12 md:pb-0">
-                <img class="h-48 md:h-32 w-auto mx-auto" src="/images/sri-lakshman.png" title="Sri Lakshman" alt="Sri Lakshman">
+            <div class="flex-1 w-full text-center pt-24 md:pt-24 pb-12 md:pb-8">
+                <img class="h-36 w-auto mx-auto" src="/images/sri-lakshman.png" title="Sri Lakshman" alt="Sri Lakshman">
                 <h1 class="sl-head text-7xl font-bold mt-8">Hi, I'm <span class="text-blue-600">Sri</span></h1>
                 <h2 class="text-2xl md:text-3xl font-light mt-2">Design Lead | UI/UX & Graphic Designer | Building Engaging Digital Experiences</h2>
                 <div class="flex flex-col md:flex-row justify-center gap-6 md:gap-2 mt-8">
@@ -281,44 +242,6 @@
             </div>
         </div>
     </section>
-    <!-- <section id="" class="bg-white bg-opacity-5 p-6 md:p-20 py-20">
-        <div class="mb-10">
-            <h4 class="font-bold text-4xl mb-2">Featured Works</h4>
-            <p class="text-xl font-light">Real projects, real impact — a showcase of digital experiences I’ve helped design and deliver.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 items-start gap-6">
-            <div class="flex flex-col justify-start gap-2 h-full bg-white p-5 rounded-2xl border-2 transition ease-in-out hover:border-indigo-200 hover:shadow-[0px_4px_0_#312e81] hover:-translate-y-1">
-                <img class="h-full w-full mb-3 rounded-lg" src="/images/project/Project-1.webp" title="Glamdeva" alt="Glamdeva">
-                <div class="font-bold text-2xl md:text-xl">Glamdeva</div>
-                <span class="text-slate-900 text-md font-light">A UK-based beauty services platform. I led a full UI/UX revamp to improve branding and user journey—resulting in a 30% boost in user engagement.</span>
-            </div>
-            <div class="flex flex-col justify-start gap-2 h-full bg-white p-5 rounded-2xl border-2 transition ease-in-out hover:border-rose-200 hover:shadow-[0px_4px_0_#e11d48] hover:-translate-y-1">
-                <img class="h-full w-full mb-3 rounded-lg" src="/images/project/Project-2.webp" title="Anything for Hire" alt="Anything for Hire">
-                <div class="font-bold text-2xl md:text-xl">Anything for Hire</div>
-                <span class="text-slate-900 text-md font-light">A comparison platform for hire services. Developed a clean and scalable design system to streamline navigation, making search and booking more intuitive.</span>
-            </div>
-            <div class="flex flex-col justify-start gap-2 h-full bg-white p-5 rounded-2xl border-2 transition ease-in-out hover:border-lime-200 hover:shadow-[0px_4px_0_#84cc16] hover:-translate-y-1">
-                <img class="h-full w-full mb-3 rounded-lg" src="/images/project/Project-3.webp" title="Rapid Vans" alt="Rapid Vans">
-                <div class="font-bold text-2xl md:text-xl">Rapid Vans</div>
-                <span class="text-slate-900 text-md font-light">A vehicle leasing website designed with a bold, conversion-driven interface that enhances service visibility and guides users through a simplified, intuitive journey.</span>
-            </div>
-            <div class="flex flex-col justify-start gap-2 h-full bg-white p-5 rounded-2xl border-2 transition ease-in-out hover:border-green-200 hover:shadow-[0px_4px_0_#15803d] hover:-translate-y-1">
-                <img class="h-full w-full mb-3 rounded-lg" src="/images/project/Project-4.webp" title="AOG-247" alt="AOG-247">
-                <div class="font-bold text-2xl md:text-xl">AOG-247</div>
-                <span class="text-slate-900 text-md font-light">An emergency aircraft parts logistics platform. Delivered a high-performance B2B interface tailored for urgent access to critical logistics services.</span>
-            </div>
-            <div class="flex flex-col justify-start gap-2 h-full bg-white p-5 rounded-2xl border-2 transition ease-in-out hover:border-blue-200 hover:shadow-[0px_4px_0_#3b82f6] hover:-translate-y-1">
-                <img class="h-full w-full mb-3 rounded-lg" src="/images/project/Project-5.webp" title="Volos" alt="Volos">
-                <div class="font-bold text-2xl md:text-xl">Volos</div>
-                <span class="text-slate-900 text-md font-light">Volos, a highway infrastructure and surveying firm, brought me in to refine the UX/UI of their project management system—improving usability and streamlining workflows for technical teams.</span>
-            </div>
-            <div class="flex flex-col justify-start gap-2 h-full bg-white p-5 rounded-2xl border-2 transition ease-in-out hover:border-red-200 hover:shadow-[0px_4px_0_#7f1d1d] hover:-translate-y-1">
-                <img class="h-full w-full mb-3 rounded-lg" src="/images/project/Project-6.webp" title="CakeCo" alt="CakeCo">
-                <div class="font-bold text-2xl md:text-xl">CakeCo</div>
-                <span class="text-slate-900 text-md font-light">Built the e-commerce rebrand of Paul’s Bakery into CakeCo—crafting a vibrant, modern UI with improved navigation, product discovery, and a mobile-first checkout experience.</span>
-            </div>
-        </div>
-    </section> -->
     <section id="featured-projects" class="bg-white bg-opacity-5 h-auto">
         <div class="px-6 md:px-20 pt-20 pb-8 md:pb-0">
             <h4 class="sl-head font-bold text-4xl mb-2">Featured Works</h4>
@@ -343,6 +266,13 @@
             </div>
         </div>
     </section>
+    <script>
+        fetch("/header.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("header-include").innerHTML = data;
+        });
+    </script>
 </body>
 <footer id="contact" class="w-full text-white bg-slate-900 border-b-8 border-blue-600 z-100">
     <div class="flex flex-col-reverse md:flex-row items-center justify-between gap-6 p-12">

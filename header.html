@@ -1,0 +1,40 @@
+<div id="cursor" class="pointer-events-none fixed top-0 left-0 z-50 w-5 h-5 rounded-full bg-slate-400 opacity-50 shadow-xl z-[100]"></div>
+<header class="fixed w-full text-slate-900 z-[99]">
+    <nav class="flex items-center justify-between p-4 mx-6 md:mx-20 m-3 bg-slate-200 bg-opacity-60 backdrop-blur-md rounded-2xl">
+      <!-- Logo -->
+      <div class="flex">
+        <a href="/">
+          <img class="h-12 w-auto p-2" src="/images/srilakshman-logo.svg" title="Sri Lakshman - Logo" alt="SL Brand Logo">
+        </a>
+      </div>
+  
+      <!-- Hamburger / Close Button -->
+      <button id="menu-toggle" class="md:hidden text-4xl mb-2 focus:outline-none z-[101]">
+        ☰
+      </button>
+  
+      <!-- Nav links (Desktop) -->
+      <div class="hidden md:flex gap-8 font-medium uppercase text-sm tracking-wide">
+        <a href="#about-me" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">About</a>
+        <a href="#core-strengths" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">Skills</a>
+        <a href="#projects" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">Projects</a>
+        <a href="/images/Sri-Lakshman-S_Resume.pdf" target="_blank" class="transition ease-in-out hover:text-blue-600 hover:-translate-y-1">Resume</a>
+      </div>
+  
+      <!-- CTA (Desktop) -->
+      <div class="hidden md:flex">
+        <a href="#contact" class="bg-blue-600 text-white transition ease-in-out hover:bg-slate-900 hover:-translate-y-1 px-4 py-2 rounded-full shadow-[0px_4px_0_#1e40af]">Get in touch!</a>
+      </div>
+    </nav>
+  
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="md:hidden fixed top-20 left-0 right-0 mx-3 bg-blue-100/90 rounded-xl p-6 py-12 hidden z-[99]">
+      <div class="flex flex-col gap-8 font-medium uppercase text-xl tracking-wide text-center">
+        <a href="#about-me" class="hover:text-blue-600">About</a>
+        <a href="#core-strengths" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="/images/Sri-Lakshman-S_Resume.pdf" target="_blank" class="hover:text-blue-600">Resume</a>
+        <a href="#contact" class="hover:text-blue-600">Get in touch!</a>
+      </div>
+    </div>
+</header>
